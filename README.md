@@ -55,7 +55,8 @@ GET /isHoliday?date=2025-01-01&country=TW
   "country": "TW",
   "date": "2025-01-01",
   "description": "中華民國開國紀念日",
-  "isHoliday": true
+  "isHoliday": true,
+  "isWorkday": false
 }
 ```
 

@@ -37,7 +37,7 @@ def is_holiday():
         logging.warning(f'Invalid date format requested: {date_arg}')
         return jsonify({'error': 'Invalid date format. Use YYYY-MM-DD.'}), 400
 
-    _holidays = holidays.country_holidays(country, language='TW', years=int(date_arg.split('-')[0]))
+    _holidays = holidays.country_holidays(country, language='zh-TW', years=int(date_arg.split('-')[0]))
     date = datetime.strptime(date_arg, '%Y-%m-%d').date()
     is_holiday = date in _holidays
     holiday_description = _holidays.get(date)
